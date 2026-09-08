@@ -132,7 +132,7 @@ print(
     f"数据集划分完成。训练集: {X_train.shape[0]}样本, 验证集: {X_test.shape[0]}样本。"
 )  # 打印划分结果的样本数量
 print("\n正在为XGBoost模型进行超参数搜索...")  # 打印超参数搜索开始的提示
-FULL_ANALYSIS = _os.environ.get("MODELVIZ_FULL_SEARCH", "0") == "1"
+FULL_ANALYSIS = _os.environ.get("CUMCM_FULL_SEARCH", "0") == "1"
 param_grid = {  # 定义一个字典，包含了希望搜索的超参数及其候选值
     "n_estimators": [100, 200, 500],  # 树的数量
     "max_depth": [5, 10, 15],  # 树的最大深度

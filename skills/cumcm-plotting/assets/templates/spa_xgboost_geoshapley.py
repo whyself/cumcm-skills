@@ -238,7 +238,7 @@ plt.close("all")  # Interactive display removed; assets were exported above.
 # =============================================================================
 print("\n--- 步骤 5: 正在执行真实的 GeoShapley 分析 ---")  # 打印提示信息
 # --- 6.1 准备数据与运行计算 ---
-FULL_ANALYSIS = _os.environ.get("MODELVIZ_FULL_SEARCH", "0") == "1"
+FULL_ANALYSIS = _os.environ.get("CUMCM_FULL_SEARCH", "0") == "1"
 background_size = min(len(df_features), 100 if FULL_ANALYSIS else 20)
 explain_size = min(len(df_features), len(df_features) if FULL_ANALYSIS else 40)
 background_data = df_features.sample(background_size, random_state=42).values

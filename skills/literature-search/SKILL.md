@@ -9,7 +9,7 @@ description: 根据主题、关键词或模型提出的检索需求扩展中英�
 
 ## 先让工具能运行
 
-`SKILL_ROOT` 是本文件所在目录；下面的命令以它为工作目录，结果放到用户项目。安装到其他位置后仍使用本目录内的相对脚本，不依赖 preMCM 的其他技能目录。
+`SKILL_ROOT` 是本文件所在目录；下面的命令以它为工作目录，结果放到用户项目。安装到其他位置后仍使用本目录内的相对脚本。
 
 首次使用或环境变动时：
 
@@ -78,4 +78,4 @@ python scripts/literature_search.py resolve --doi "10.1038/nature14539" --out "<
 | [scripts/runtime.py](scripts/runtime.py) | 六项配置读取、请求限速、有限重试、进程内请求缓存 |
 | [scripts/test_literature_search.py](scripts/test_literature_search.py) | 离线行为测试，无需 Key 或网络 |
 
-修改脚本后运行 `python -m unittest discover -s scripts -p "test_*.py"`，涉及接口时对相应来源做少量实时自检。来源取舍和原始资料位置见 [references/provenance.md](references/provenance.md)，仅维护时读取。
+修改脚本后运行 `python -m unittest discover -s scripts -p "test_*.py"`，涉及接口时对相应来源做少量实时自检。来源选择见 [references/sources.md](references/sources.md)。

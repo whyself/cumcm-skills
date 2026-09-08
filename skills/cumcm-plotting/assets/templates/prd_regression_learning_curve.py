@@ -112,7 +112,7 @@ print(
 # -------------------------------------------------------------------
 # 第 3 步: 定义模型超参数网格
 # -------------------------------------------------------------------
-FULL_SEARCH = _os.environ.get("MODELVIZ_FULL_SEARCH", "0") == "1"
+FULL_SEARCH = _os.environ.get("CUMCM_FULL_SEARCH", "0") == "1"
 SEARCH_CV = 5 if FULL_SEARCH else 3
 WORKERS = -1 if FULL_SEARCH else 1
 CURVE_SIZES = np.linspace(0.1, 1.0, 5 if FULL_SEARCH else 3)

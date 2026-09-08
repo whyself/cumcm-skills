@@ -79,7 +79,7 @@ skbio_dist_matrix = DistanceMatrix(
 )
 # --- 3. 执行PERMANOVA检验并手动计算R2 ---
 # 使用转换后的距离矩阵和分组信息进行PERMANOVA（多元方差分析）检验
-permutation_count = 9999 if _os.environ.get("MODELVIZ_FULL_SEARCH", "0") == "1" else 999
+permutation_count = 9999 if _os.environ.get("CUMCM_FULL_SEARCH", "0") == "1" else 999
 adonis_results = permanova(skbio_dist_matrix, df_grouping, permutations=permutation_count)
 
 # 打印一个分隔符，使输出更清晰

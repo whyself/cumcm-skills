@@ -1,4 +1,4 @@
-"""Provider adapters, adapted from preMCM search and OA workflows."""
+"""Provider adapters for academic search and open-access metadata."""
 
 import re
 import xml.etree.ElementTree as ET

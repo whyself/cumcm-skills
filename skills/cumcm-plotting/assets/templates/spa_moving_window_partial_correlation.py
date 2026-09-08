@@ -390,7 +390,7 @@ def process_pixel_windowed(
 
 def main():  # 定义主函数
     # ***** 配置参数 *****
-    FULL_ANALYSIS = _os.environ.get("MODELVIZ_FULL_SEARCH", "0") == "1"
+    FULL_ANALYSIS = _os.environ.get("CUMCM_FULL_SEARCH", "0") == "1"
     WINDOW_SIZE = 3  # 定义滑动窗口的大小 (例如5x5) - 移到函数顶部方便修改
     logging.info(
         f"----- 开始执行偏相关分析 (窗口大小: {WINDOW_SIZE}x{WINDOW_SIZE}) -----"
@@ -400,11 +400,6 @@ def main():  # 定义主函数
         str(DATA_DIR / "HSL"),
         str(DATA_DIR / "JS"),
         str(DATA_DIR / "NIR"),
-        # r'E:\YZQ\shiyan\5.19\qw', # 以下是被注释掉的文件夹路径示例
-        # r'E:\YZQ\shiyan\5.19\rz',
-        # r'E:\YZQ\shiyan\5.19\SOF',
-        # r'E:\YZQ\shiyan\5.19\SOT-180',
-        # r'E:\YZQ\shiyan\5.19\XSDL',
     ]
     Y_folder = str(DATA_DIR / "GST")
     output_folder = str(OUTPUT_DIR)  # 定义存储输出结果的文件夹路径

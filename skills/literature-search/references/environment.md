@@ -28,7 +28,7 @@
 | `HTTP_PROXY` | `http_proxy` | 网络需要时配置 | 用户实际 HTTP 代理地址，不假定端口 |
 | `HTTPS_PROXY` | `https_proxy` | 网络需要时配置 | 用户实际 HTTPS 请求代理地址，值通常也以 `http://` 开头 |
 
-“6 个变量”是最大配置接口，不是六个都必须填写。推荐先填邮箱和 OpenAlex Key，后续按需要再加。无需分别设置 `PUBMED_EMAIL`、`UNPAYWALL_EMAIL`、`OPENALEX_MAILTO` 和 `CROSSREF_MAILTO`；这份新 Skill 不读取这些旧变量，也不改动旧技能的配置。
+“6 个变量”是最大配置接口，不是六个都必须填写。推荐先填邮箱和 OpenAlex Key，后续按需要再加。邮箱统一由 `LITERATURE_EMAIL` 或私有配置的 `email` 字段提供。
 
 Python 标准库直接支持 HTTP/HTTPS 代理；SOCKS 地址不在本包支持范围，提醒用户提供 HTTP 代理端口或使用可用的其他网络路径。不要关闭 TLS 证书校验来解决网络问题。
 

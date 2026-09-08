@@ -282,7 +282,7 @@ output_dir = str(OUTPUT_DIR)  # 输出地址
 os.makedirs(output_dir, exist_ok=True)
 # 选择颜色
 color_scheme = 0
-FULL_EXPORTS = _os.environ.get("MODELVIZ_FULL_SEARCH", "0") == "1"
+FULL_EXPORTS = _os.environ.get("CUMCM_FULL_SEARCH", "0") == "1"
 
 
 # =========================================================================================

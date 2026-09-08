@@ -96,7 +96,7 @@ print(
 # -------------------------------------------------------------------
 # 步骤 3: 构建模型流水线 (Pipeline) 和集成模型
 # -------------------------------------------------------------------
-FULL_SEARCH = _os.environ.get("MODELVIZ_FULL_SEARCH", "0") == "1"
+FULL_SEARCH = _os.environ.get("CUMCM_FULL_SEARCH", "0") == "1"
 SEARCH_CV = 5 if FULL_SEARCH else 3
 WORKERS = -1 if FULL_SEARCH else 1
 CURVE_SIZES = np.linspace(0.1, 1.0, 5 if FULL_SEARCH else 3)
@@ -311,7 +311,7 @@ def plot_shap_summary(
     )  # 创建一个 KernelExplainer 解释器实例
     shap_values = explainer.shap_values(
         X_explain, nsamples="auto" if FULL_SEARCH else 128
-    )  # 默认示例使用受控样本量；完整分析由 MODELVIZ_FULL_SEARCH 开启
+    )  # 默认示例使用受控样本量；完整分析由 CUMCM_FULL_SEARCH 开启
     shap.summary_plot(
         shap_values, X_explain, feature_names=feature_names, show=False
     )  # 生成 SHAP 摘要图，但暂时不显示
