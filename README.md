@@ -76,4 +76,4 @@ python3 -m venv .venv
 - **额外依赖**：Excel 输入、统计分析、机器学习等按所选代码补装，例如 `openpyxl`、`scipy`、`scikit-learn`；无需安装整个模板库的依赖。
 - **求解与复算**：沿用项目的 Python、MATLAB 或 R 环境及所需求解器。
 
-绘图模板需按真实数据适配。详细环境检查与补包方法见[绘图环境说明](skills/cumcm-plotting/references/environment.md)，资料来源与许可见[许可说明](THIRD_PARTY_NOTICES.md)。
+绘图模板需按真实数据适配。详细环境检查与补包方法见[绘图环境说明](skills/cumcm-plotting/references/environment.md)。
