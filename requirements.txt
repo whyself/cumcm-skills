@@ -1,0 +1,7 @@
+# Base plotting environment; Python >= 3.10.
+# Optional template dependencies are documented in README.md.
+numpy
+pandas
+matplotlib
+seaborn
+Pillow

@@ -1,0 +1,5 @@
+[
+  {"source": "openalex", "query": "robust vehicle routing", "limit": 10, "year_from": 2020},
+  {"source": "crossref", "query": "vehicle routing uncertainty robust optimization", "limit": 10},
+  {"source": "arxiv", "query": "(all:\"vehicle routing\") AND (all:robust OR all:stochastic)", "limit": 10}
+]

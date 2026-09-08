@@ -1,0 +1,26 @@
+# Local Python environments and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mplconfig/
+.matplotlib/
+
+# Local data, generated figures and environment reports
+/data/
+/outputs/
+/dist/
+requirements-lock.txt
+
+# Local credentials and editor settings
+.env
+.env.*
+!.env.example
+# Private literature-search configuration; keep the blank example distributable.
+config.json
+.config/
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db

@@ -1,0 +1,4 @@
+interface:
+  display_name: "国赛论文语言润色"
+  short_description: "依据近三年论文语料，按章节润色中文表达，严格保留原意、数据与结论强度"
+  default_prompt: "请使用 $cumcm-language-polish 润色以下国赛论文段落，保留全部原意和技术内容，疑点另列。"

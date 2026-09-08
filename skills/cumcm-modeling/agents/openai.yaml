@@ -1,0 +1,4 @@
+interface:
+  display_name: "国赛建模协作"
+  short_description: "结合赛题、附件与人的分析，解释并比较模型，形成可实现、可解释、可验证的方案"
+  default_prompt: "请用 $cumcm-modeling 结合赛题、附件和我的分析提出建模建议，解释模型与结果，帮助我思考关键取舍，并按我们的讨论推进方案。"

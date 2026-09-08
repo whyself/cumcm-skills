@@ -1,0 +1,4 @@
+interface:
+  display_name: "建模计算结果核验"
+  short_description: "对照模型、代码和运算结果，以复算证据判断可信度及结论范围"
+  default_prompt: "使用 $cumcm-result-verification 核查当前建模结果，按需独立复算，区分已通过、存在问题和无法判断，并说明结论适用范围。"
